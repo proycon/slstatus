@@ -63,11 +63,11 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-    { keymap, "🌍 %s ", NULL },
-    //{ wifi_essid, "🖧 %s", "wlan0" },
-    //{ battery_perc, "🔋 %s", "BAT0" },
-    { run_command, "🔊 %s ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
-	{ cpu_perc, "cpu %s%% ", NULL	      },
-	{ ram_perc, "ram %s%% ", NULL	      },
-	{ datetime, "%s", "🕑 %H:%M" },
+    { keymap, "  %s ", NULL },
+    //{ wifi_essid, " %s", "wlan0" },
+    //{ battery_perc, " %s", "BAT0" },
+    { run_command, " %s ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
+	{ cpu_perc, " %s%% ", NULL	      },
+	{ ram_perc, " %s%% ", NULL	      },
+	{ datetime, "%s", " %H:%M" },
 };
