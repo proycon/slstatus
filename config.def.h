@@ -65,8 +65,8 @@ static const struct arg args[] = {
 	/* function format          argument */
     { run_command, " >%s ", "tail -n 1 ~/.timetracker.log | cut --delimiter=' ' -f 3,4 | tr -d '\\n' " },
     { keymap, "  %s ", NULL },
-    //{ wifi_essid, " %s", "wlan0" },
-    //{ battery_perc, " %s", "BAT0" },
+    { wifi_essid, " %s", "wlp2s0" },
+    { battery_perc, "  %s%% ", "BAT0" },
     { run_command, " %s ", "amixer sget Master | awk -F\"[][]\" '/%/ { print $2 }' | head -n1" },
 	{ cpu_perc, " %s%% ", NULL	      },
 	{ ram_perc, " %s%% ", NULL	      },
