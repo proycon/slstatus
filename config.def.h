@@ -63,6 +63,7 @@ static const char unknown_str[] = "";
  */
 static const struct arg args[] = {
 	/* function format          argument */
+    { run_command, "%s ", "cat ~/.mail.log | head -n 1 | tr -d '\\n'" },
     { run_command, " >%s ", "tail -n 1 ~/.timetracker.log | cut --delimiter=' ' -f 3,4 | tr -d '\\n' " },
     { keymap, "  %s ", NULL },
     //{ wifi_essid, " %s", "wlan0" },
